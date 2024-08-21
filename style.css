@@ -15,6 +15,7 @@ body {
 .app-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
   padding: 40px;
 }
 
@@ -130,4 +131,44 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 4px;
+}
+.weekly-forecast-container {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.weekly-forecast-container .day-weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.weekly-forecast-container .day-weather-item p,
+.weekly-forecast-container .day-weather-item img,
+.weekly-forecast-container .day-weather-item div {
+  flex: 1;
+}
+
+.weekly-forecast-container .day-weather-item p:first-child {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+.weekly-forecast-container .day-weather-item img {
+  width: 60px;
+  height: 60px;
+}
+.weekly-forecast-container .day-weather-item div {
+  display: flex;
+  align-items: center;
+}
+.weekly-forecast-container .day-weather-item div p:first-child {
+  color: #2a394f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.weekly-forecast-container .day-weather-item div p:last-child {
+  color: #8f8f8f;
+  font-weight: 500;
 }
